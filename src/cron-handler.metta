@@ -32,8 +32,15 @@
                  (let $skill (py-call (cron_helper.get_field $result "skill"))
                       (let $task  (py-call (cron_helper.get_field $result "task"))
                            (let $payload (py-call (cron_helper.get_field $result "payload"))
-                                (println! (CRON DISPATCH: $skill $task $payload))
-                                (crontab-dispatch $skill $task $payload))))))))
+                                (let $idemp (py-call (cron_helper.check_idempotency $skill $task 120))
+                                     (let $blocked (py-call (cron_helper.get_field $idemp "0"))
+                                          (if (== $blocked "True")
+                                              (let $elapsed (py-call (cron_helper.get_field $idemp "1"))
+                                                   (println! (CRON SKIPPED: $skill $task - $elapsed s since last fire)))
+                                              (progn
+                                                  (println! (CRON DISPATCH: $skill $task $payload))
+                                                  (crontab-dispatch $skill $task $payload)
+                                                  (py-call (cron_helper.update_last_fired $skill $task)))))))))))))
 
 
 ; ─── Whitelist-gated dispatch ────────────────────────────────────────────────
