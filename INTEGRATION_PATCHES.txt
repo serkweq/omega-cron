@@ -1,1 +1,35 @@
-SU5URUdSQVRJT04gUEFUQ0hFUyBGT1IgT01FR0FDTEFXCj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KClBhdGNoIDE6IGxpYl9vbWVnYWNsYXcubWV0dGEKLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KQWRkIGFmdGVyIHRoZSBvdGhlciBzcmMvIGltcG9ydHM6CgogICEoaW1wb3J0ISAmc2VsZiAobGlicmFyeSBPbWVnYUNsYXctQ29yZSAuL3NyYy9jcm9uLWhhbmRsZXIpKQoKClBhdGNoIDI6IHNyYy9oZWxwZXIucHkKLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KQWRkIGF0IHRoZSBlbmQgb2YgdGhlIGZpbGUgKGJlZm9yZSB0aGUgX19tYWluX18gYmxvY2sgaWYgYW55KToKCiAgZGVmIGdldF9maWVsZChvYmosIGZpZWxkKToKICAgICAgaWYgaGFzYXR0cihvYmosIGZpZWxkKToKICAgICAgICAgIHJldHVybiBnZXRhdHRyKG9iaiwgZmllbGQpCiAgICAgIGlmIGlzaW5zdGFuY2Uob2JqLCBkaWN0KToKICAgICAgICAgIHJldHVybiBvYmouZ2V0KGZpZWxkKQogICAgICByZXR1cm4gTm9uZQoKClBhdGNoIDM6IHNyYy9za2lsbHMubWV0dGEKLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0KQWRkIHRvIGdldFNraWxscyBsaXN0IChpbiB0aGUgQ09NTVVOSUNBVElPTiBDSEFOTkVMUyBzZWN0aW9uIG9yIHNpbWlsYXIpOgoKICAgICItIEludm9rZSBhIHNjaGVkdWxlZCB0YXNrIGJ5IGNyb24gdHJpZ2dlcjogY3JvbnRhYiBzdHJpbmciCgoKUGF0Y2ggNDogQ29weSBjcm9uLWhlbHBlci5weQotLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQogIGNwIG9tZWdhLWNyb24vc3JjL2Nyb24taGVscGVyLnB5IC9wYXRoL3RvL09tZWdhQ2xhdy1Db3JlL3NyYy9jcm9uLWhlbHBlci5weQoKICBUaGVuIGluIGxpYl9vbWVnYWNsYXcubWV0dGEgYWRkIHRoZSBQeXRob24gYnJpZGdlIGltcG9ydDoKICAhKGltcG9ydCEgJnNlbGYgKGxpYnJhcnkgT21lZ2FDbGF3LUNvcmUgLi9zcmMvY3Jvbi1oZWxwZXIucHkpKQo=
+INTEGRATION PATCHES FOR OMEGACLAW
+==================================
+
+Patch 1: lib_omegaclaw.metta
+-----------------------------
+Add after the other src/ imports:
+
+  !(import! &self (library OmegaClaw-Core ./src/cron-handler))
+
+
+Patch 2: src/helper.py
+-----------------------
+Add at the end of the file (before the __main__ block if any):
+
+  def get_field(obj, field):
+      if hasattr(obj, field):
+          return getattr(obj, field)
+      if isinstance(obj, dict):
+          return obj.get(field)
+      return None
+
+
+Patch 3: src/skills.metta
+--------------------------
+Add to getSkills list (in the COMMUNICATION CHANNELS section or similar):
+
+    "- Invoke a scheduled task by cron trigger: crontab string"
+
+
+Patch 4: Copy cron-helper.py
+-----------------------------
+  cp omega-cron/src/cron-helper.py /path/to/OmegaClaw-Core/src/cron-helper.py
+
+  Then in lib_omegaclaw.metta add the Python bridge import:
+  !(import! &self (library OmegaClaw-Core ./src/cron-helper.py))

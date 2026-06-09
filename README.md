@@ -1,1 +1,82 @@
-b21lZ2EtY3JvbiAtIEV4dGVybmFsIENyb24gVHJpZ2dlciBQaXBlbGluZSBmb3IgT21lZ2FDbGF3Cj09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCldIQVQgVEhJUyBET0VTCi0tLS0tLS0tLS0tLS0tClNjaGVkdWxlcyB3b3JrIHRvIHJ1biBhZ2FpbnN0IE9tZWdhQ2xhdyBhdCBwcmVjaXNlIHRpbWVzLgpTY2hlZHVsaW5nIGludGVudCBvcmlnaW5hdGVzIGV4dGVybmFsbHk7IE9tZWdhQ2xhdyBpcyB0aGUKZXhlY3V0b3IsIG5vdCB0aGUgc2NoZWR1bGVyLgoKICBjcm9uLm9yZyAtPiBjdXJsIC0+IFRlbGVncmFtIEJvdCBBUEkgLT4gT21lZ2FDbGF3IHBvbGxpbmcgLT4gTWVUVGEgLT4gYWN0aW9uCgpObyBuZXcgYm90LCBubyBkYWVtb24sIG5vIHNlcGFyYXRlIGluZnJhc3RydWN0dXJlLgpTYW1lIFRHX0JPVF9UT0tFTiBPbWVnYUNsYXcgYWxyZWFkeSB1c2VzLgoKRklMRVMKLS0tLS0KICB0cmlnZ2VyLnNoICAgICAgICAgICAgICBjdXJsIHdyYXBwZXIgLSB0aGUgb25seSBleHRlcm5hbCBkZXBlbmRlbmN5CiAgc3JjL2Nyb24taGVscGVyLnB5ICAgICAgUHl0aG9uOiB3aGl0ZWxpc3QgKyBwYXJzZSBsb2dpYwogIHNyYy9jcm9uLWhhbmRsZXIubWV0dGEgIE1lVFRhOiBwYXJzZSwgZGlzcGF0Y2gsIHNraWxsIGhhbmRsZXJzCiAgZXhhbXBsZS1jcm9udGFiICAgICAgICAgUmVhZHktdG8tcGFzdGUgY3JvbiBleHByZXNzaW9ucwogIFJFQURNRS5tZCAgICAgICAgICAgICAgIFRoaXMgZmlsZQoKSU5TVEFMTEFUSU9OIElOVE8gT01FR0FDTEFXCi0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLQoxLiBDb3B5IHRoZSBjcm9uIGhlbHBlciBQeXRob24gbW9kdWxlIGludG8gT21lZ2FDbGF3OgoKICAgY3Agc3JjL2Nyb24taGVscGVyLnB5IC9wYXRoL3RvL09tZWdhQ2xhdy1Db3JlL3NyYy9jcm9uLWhlbHBlci5weQoKMi4gQWRkIGNyb24taGFuZGxlci5tZXR0YSB0byB0aGUgbG9hZCBjaGFpbi4KICAgSW4gbGliX29tZWdhY2xhdy5tZXR0YSwgYWRkIGFmdGVyIG90aGVyIGltcG9ydHM6CgogICAhKGltcG9ydCEgJnNlbGYgKGxpYnJhcnkgT21lZ2FDbGF3LUNvcmUgLi9zcmMvY3Jvbi1oYW5kbGVyKSkKCjMuIFJlZ2lzdGVyIHRoZSBjcm9udGFiIHNraWxsIGluIHNyYy9za2lsbHMubWV0dGEuCiAgIEFkZCB0byBnZXRTa2lsbHM6CgogICAgICItIEludm9rZSBzY2hlZHVsZWQgdGFzayBkaXNwYXRjaGVyOiBjcm9udGFiIHN0cmluZyIKCjQuIEFkZCBnZXRfZmllbGQgaGVscGVyIHRvIHNyYy9oZWxwZXIucHk6CgogICBkZWYgZ2V0X2ZpZWxkKG9iaiwgZmllbGQpOgogICAgICAgaWYgaGFzYXR0cihvYmosIGZpZWxkKToKICAgICAgICAgICByZXR1cm4gZ2V0YXR0cihvYmosIGZpZWxkKQogICAgICAgaWYgaXNpbnN0YW5jZShvYmosIGRpY3QpOgogICAgICAgICAgIHJldHVybiBvYmouZ2V0KGZpZWxkKQogICAgICAgcmV0dXJuIE5vbmUKCjUuIFJlc3RhcnQgT21lZ2FDbGF3LgoKVEVTVElORwotLS0tLS0tCiAgIyBUZXN0IHRyaWdnZXIgc2NyaXB0IChubyBPbWVnYUNsYXcgbmVlZGVkKQogIFRHX0JPVF9UT0tFTj0uLi4gVEdfQ0hBVF9JRD0uLi4gLi90cmlnZ2VyLnNoIHBpbmcgaGVhbHRoLWNoZWNrCgogICMgV2l0aCBPbWVnYUNsYXcgcnVubmluZwogIFRHX0JPVF9UT0tFTj0uLi4gVEdfQ0hBVF9JRD0uLi4gLi90cmlnZ2VyLnNoIHRlc3QgcGluZwogIGRvY2tlciBsb2dzIC1mIG9tZWdhY2xhdyB8IGdyZXAgQ1JPTgoKQURESU5HIE5FVyBDUk9OIFNLSUxMUwotLS0tLS0tLS0tLS0tLS0tLS0tLS0tCjEuIFdoaXRlbGlzdCBpbiBzcmMvY3Jvbi1oZWxwZXIucHkgV0hJVEVMSVNUIGRpY3QKMi4gQWRkIGhhbmRsZXIgY2FzZSBpbiBzcmMvY3Jvbi1oYW5kbGVyLm1ldHRhIGNyb250YWItZGlzcGF0Y2gKMy4gSW1wbGVtZW50IHRoZSBoYW5kbGVyIGZ1bmN0aW9uCjQuIEFkZCBjcm9udGFiIGVudHJ5CgpTRUNVUklUWSBNT0RFTAotLS0tLS0tLS0tLS0tLQotIFNraWxsIHdoaXRlbGlzdCBlbmZvcmNlZCBpbiBjcm9uLWhlbHBlci5weSBiZWZvcmUgYW55IGhhbmRsZXIgcnVucwotIFRHX0JPVF9UT0tFTiBncmFudHMgc2VuZC1vbmx5IGFjY2VzcyB0byB5b3VyIGJvdW5kIFRlbGVncmFtIGNoYXQKLSBBdXRoIGJpbmRpbmc6IG9ubHkgeW91ciBhY2NvdW50IGNhbiB0cmlnZ2VyIE9tZWdhQ2xhdwotIGNyb246IHByZWZpeCBkaXN0aW5ndWlzaGVzIHNjaGVkdWxlZCB0cmlnZ2VycyBpbiBsb2dzCgpMSU1JVEFUSU9OUwotLS0tLS0tLS0tLQotIE1heCAyMHMgZGVsYXkgKFRHX1BPTExfVElNRU9VVCkgYmV0d2VlbiBjcm9uIGZpcmUgYW5kIGFnZW50IHJlc3BvbnNlCi0gSWYgT21lZ2FDbGF3IG9mZmxpbmUgd2hlbiBjcm9uIGZpcmVzLCBUZWxlZ3JhbSBxdWV1ZXMgdXAgdG8gMjRoCi0gTm8gbmF0aXZlIFRlbGVncmFtIG1lc3NhZ2Ugc2NoZWR1bGluZyAtIHRoaXMgaXMgZXh0ZXJuYWwgc2NoZWR1bGluZwoKRU5WSVJPTk1FTlQgVkFSSUFCTEVTCi0tLS0tLS0tLS0tLS0tLS0tLS0tLQogIFRHX0JPVF9UT0tFTiAgIEJvdCB0b2tlbiBmcm9tIE9tZWdhQ2xhdyBjb25maWcKICBUR19DSEFUX0lEICAgICBZb3VyIFRlbGVncmFtIGNoYXQgSUQgKGJvdW5kIGFmdGVyIGF1dGgpCg==
+omega-cron - External Cron Trigger Pipeline for OmegaClaw
+==========================================================
+
+WHAT THIS DOES
+--------------
+Schedules work to run against OmegaClaw at precise times.
+Scheduling intent originates externally; OmegaClaw is the
+executor, not the scheduler.
+
+  cron.org -> curl -> Telegram Bot API -> OmegaClaw polling -> MeTTa -> action
+
+No new bot, no daemon, no separate infrastructure.
+Same TG_BOT_TOKEN OmegaClaw already uses.
+
+FILES
+-----
+  trigger.sh              curl wrapper - the only external dependency
+  src/cron-helper.py      Python: whitelist + parse logic
+  src/cron-handler.metta  MeTTa: parse, dispatch, skill handlers
+  example-crontab         Ready-to-paste cron expressions
+  README.md               This file
+
+INSTALLATION INTO OMEGACLAW
+---------------------------
+1. Copy the cron helper Python module into OmegaClaw:
+
+   cp src/cron-helper.py /path/to/OmegaClaw-Core/src/cron-helper.py
+
+2. Add cron-handler.metta to the load chain.
+   In lib_omegaclaw.metta, add after other imports:
+
+   !(import! &self (library OmegaClaw-Core ./src/cron-handler))
+
+3. Register the crontab skill in src/skills.metta.
+   Add to getSkills:
+
+     "- Invoke scheduled task dispatcher: crontab string"
+
+4. Add get_field helper to src/helper.py:
+
+   def get_field(obj, field):
+       if hasattr(obj, field):
+           return getattr(obj, field)
+       if isinstance(obj, dict):
+           return obj.get(field)
+       return None
+
+5. Restart OmegaClaw.
+
+TESTING
+-------
+  # Test trigger script (no OmegaClaw needed)
+  TG_BOT_TOKEN=... TG_CHAT_ID=... ./trigger.sh ping health-check
+
+  # With OmegaClaw running
+  TG_BOT_TOKEN=... TG_CHAT_ID=... ./trigger.sh test ping
+  docker logs -f omegaclaw | grep CRON
+
+ADDING NEW CRON SKILLS
+----------------------
+1. Whitelist in src/cron-helper.py WHITELIST dict
+2. Add handler case in src/cron-handler.metta crontab-dispatch
+3. Implement the handler function
+4. Add crontab entry
+
+SECURITY MODEL
+--------------
+- Skill whitelist enforced in cron-helper.py before any handler runs
+- TG_BOT_TOKEN grants send-only access to your bound Telegram chat
+- Auth binding: only your account can trigger OmegaClaw
+- cron: prefix distinguishes scheduled triggers in logs
+
+LIMITATIONS
+-----------
+- Max 20s delay (TG_POLL_TIMEOUT) between cron fire and agent response
+- If OmegaClaw offline when cron fires, Telegram queues up to 24h
+- No native Telegram message scheduling - this is external scheduling
+
+ENVIRONMENT VARIABLES
+---------------------
+  TG_BOT_TOKEN   Bot token from OmegaClaw config
+  TG_CHAT_ID     Your Telegram chat ID (bound after auth)

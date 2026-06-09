@@ -1,1 +1,62 @@
-CmltcG9ydCByZQoKQ1JPTl9QUkVGSVggPSAiY3JvbjoiCldISVRFTElTVCA9IHsicGluZyIsICJ0ZXN0IiwgImluc3RhZ3JhbSIsICJzdW1tYXJ5IiwgImJhY2t1cCIsICJtZW1vcnkifQoKCmRlZiBpc19jcm9uX21lc3NhZ2UodGV4dCk6CiAgICByZXR1cm4gdGV4dC5zdHJpcCgpLmxvd2VyKCkuc3RhcnRzd2l0aChDUk9OX1BSRUZJWCkKCgpkZWYgcGFyc2VfY3Jvbl9tZXNzYWdlKHRleHQpOgogICAgdGV4dCA9IHRleHQuc3RyaXAoKQogICAgaWYgbm90IHRleHQubG93ZXIoKS5zdGFydHN3aXRoKENST05fUFJFRklYKToKICAgICAgICByZXR1cm4gewogICAgICAgICAgICAidmFsaWQiOiBGYWxzZSwKICAgICAgICAgICAgInNraWxsIjogTm9uZSwKICAgICAgICAgICAgInRhc2siOiBOb25lLAogICAgICAgICAgICAicGF5bG9hZCI6IE5vbmUsCiAgICAgICAgICAgICJlcnJvciI6IGYiTm90IGEgY3JvbiBtZXNzYWdlIChtaXNzaW5nIFwne0NST05fUFJFRklYfVwnIHByZWZpeCkiCiAgICAgICAgfQoKICAgIGJvZHkgPSB0ZXh0W2xlbihDUk9OX1BSRUZJWCk6XS5zdHJpcCgpCiAgICBwYXJ0cyA9IGJvZHkuc3BsaXQoIjoiKQoKICAgIGlmIGxlbihwYXJ0cykgPCAyOgogICAgICAgIHJldHVybiB7CiAgICAgICAgICAgICJ2YWxpZCI6IEZhbHNlLAogICAgICAgICAgICAic2tpbGwiOiBOb25lLAogICAgICAgICAgICAidGFzayI6IE5vbmUsCiAgICAgICAgICAgICJwYXlsb2FkIjogTm9uZSwKICAgICAgICAgICAgImVycm9yIjogZiJJbnZhbGlkIGNyb24gZm9ybWF0LiBFeHBlY3RlZCBcJ2Nyb246PHNraWxsPjo8dGFzaz5cJyBnb3QgXCd7Ym9keX1cJyIKICAgICAgICB9CgogICAgc2tpbGwgPSBwYXJ0c1swXS5zdHJpcCgpLmxvd2VyKCkKICAgIHRhc2sgPSBwYXJ0c1sxXS5zdHJpcCgpLmxvd2VyKCkKICAgIHBheWxvYWQgPSAiOiIuam9pbihwYXJ0c1syOl0pLnN0cmlwKCkgb3IgTm9uZQoKICAgIGlmIHNraWxsIG5vdCBpbiBXSElURUxJU1Q6CiAgICAgICAgcmV0dXJuIHsKICAgICAgICAgICAgInZhbGlkIjogRmFsc2UsCiAgICAgICAgICAgICJza2lsbCI6IHNraWxsLAogICAgICAgICAgICAidGFzayI6IHRhc2ssCiAgICAgICAgICAgICJwYXlsb2FkIjogcGF5bG9hZCwKICAgICAgICAgICAgImVycm9yIjogZiJVbmtub3duIHNraWxsIFwne3NraWxsfVwnLiBXaGl0ZWxpc3Q6IHsnLCAnLmpvaW4oc29ydGVkKFdISVRFTElTVCkpfSIKICAgICAgICB9CgogICAgcmV0dXJuIHsKICAgICAgICAidmFsaWQiOiBUcnVlLAogICAgICAgICJza2lsbCI6IHNraWxsLAogICAgICAgICJ0YXNrIjogdGFzaywKICAgICAgICAicGF5bG9hZCI6IHBheWxvYWQsCiAgICAgICAgImVycm9yIjogTm9uZQogICAgfQoKCmRlZiBnZXRfZmllbGQob2JqLCBmaWVsZCk6CiAgICBpZiBoYXNhdHRyKG9iaiwgZmllbGQpOgogICAgICAgIHJldHVybiBnZXRhdHRyKG9iaiwgZmllbGQpCiAgICBpZiBpc2luc3RhbmNlKG9iaiwgZGljdCk6CiAgICAgICAgcmV0dXJuIG9iai5nZXQoZmllbGQpCiAgICByZXR1cm4gTm9uZQo=
+
+import re
+
+CRON_PREFIX = "cron:"
+WHITELIST = {"ping", "test", "instagram", "summary", "backup", "memory"}
+
+
+def is_cron_message(text):
+    return text.strip().lower().startswith(CRON_PREFIX)
+
+
+def parse_cron_message(text):
+    text = text.strip()
+    if not text.lower().startswith(CRON_PREFIX):
+        return {
+            "valid": False,
+            "skill": None,
+            "task": None,
+            "payload": None,
+            "error": f"Not a cron message (missing \'{CRON_PREFIX}\' prefix)"
+        }
+
+    body = text[len(CRON_PREFIX):].strip()
+    parts = body.split(":")
+
+    if len(parts) < 2:
+        return {
+            "valid": False,
+            "skill": None,
+            "task": None,
+            "payload": None,
+            "error": f"Invalid cron format. Expected \'cron:<skill>:<task>\' got \'{body}\'"
+        }
+
+    skill = parts[0].strip().lower()
+    task = parts[1].strip().lower()
+    payload = ":".join(parts[2:]).strip() or None
+
+    if skill not in WHITELIST:
+        return {
+            "valid": False,
+            "skill": skill,
+            "task": task,
+            "payload": payload,
+            "error": f"Unknown skill \'{skill}\'. Whitelist: {', '.join(sorted(WHITELIST))}"
+        }
+
+    return {
+        "valid": True,
+        "skill": skill,
+        "task": task,
+        "payload": payload,
+        "error": None
+    }
+
+
+def get_field(obj, field):
+    if hasattr(obj, field):
+        return getattr(obj, field)
+    if isinstance(obj, dict):
+        return obj.get(field)
+    return None

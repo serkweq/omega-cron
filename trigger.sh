@@ -1,1 +1,65 @@
-IyEvdXNyL2Jpbi9lbnYgYmFzaAojIG9tZWdhLWNyb24gdHJpZ2dlciBzY3JpcHQKIyBTZW5kcyBhIGNyb246IHByZWZpeGVkIG1lc3NhZ2UgdG8gdGhlIE9tZWdhQ2xhdyBUZWxlZ3JhbSBib3QgdmlhIHRoZSBCb3QgQVBJLgojIE5vIG5ldyBib3QgbmVlZGVkIOKAlCB1c2VzIHRoZSBzYW1lIFRHX0JPVF9UT0tFTiBhbHJlYWR5IGNvbmZpZ3VyZWQgZm9yIE9tZWdhQ2xhdy4KIwojIFVzYWdlOgojICAgLi90cmlnZ2VyLnNoIDxza2lsbD4gPHRhc2s+IFtwYXlsb2FkXQojICAgRXhhbXBsZXM6CiMgICAgIC4vdHJpZ2dlci5zaCBwaW5nIGhlYWx0aC1jaGVjawojICAgICAuL3RyaWdnZXIuc2ggaW5zdGFncmFtIHdlZWtseS1wb3N0CiMgICAgIC4vdHJpZ2dlci5zaCBzdW1tYXJ5IGRhaWx5LW1vcm5pbmcgImZvY3VzIG9uIG5ldyBmb2xsb3dlcnMiCiMKIyBFbnZpcm9ubWVudCB2YXJpYWJsZXMgKHNldCBpbiBPbWVnYUNsYXcncyAuZW52IG9yIGV4cG9ydCBkaXJlY3RseSk6CiMgICBUR19CT1RfVE9LRU4gICDigJQgYm90IHRva2VuIGZyb20gQEJvdEZhdGhlciAoYWxyZWFkeSBzZXQgZm9yIE9tZWdhQ2xhdykKIyAgIFRHX0NIQVRfSUQgICAgIOKAlCB5b3VyIFRlbGVncmFtIGNoYXQgSUQgKGFscmVhZHkgYm91bmQgYWZ0ZXIgYXV0aCkKIwojIFRoZSBib3Qgd2lsbCByZWNlaXZlIHRoaXMgYXMgYSBwbGFpbiBtZXNzYWdlIHByZWZpeGVkIHdpdGggImNyb246Ii4KIyBPbWVnYUNsYXcncyBjcm9uLWhhbmRsZXIubWV0dGEgcGFyc2VzIGFuZCBkaXNwYXRjaGVzIGl0LgoKc2V0IC1ldW8gcGlwZWZhaWwKCiMg4pSA4pSAIENvbmZpZyDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKOiAiJHtUR19CT1RfVE9LRU46P1RHX0JPVF9UT0tFTiBlbnYgdmFyIHJlcXVpcmVkfSIKOiAiJHtUR19DSEFUX0lEOj9UR19DSEFUX0lEIGVudiB2YXIgcmVxdWlyZWR9IgoKQk9UX0FQST0iaHR0cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdCR7VEdfQk9UX1RPS0VOfSIKCiMg4pSA4pSAIEFyZ3Mg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSAClNLSUxMPSIkezE6LX0iClRBU0s9IiR7MjotfSIKUEFZTE9BRD0iJHszOi19IgoKaWYgW1sgLXogIiRTS0lMTCIgfHwgLXogIiRUQVNLIiBdXTsgdGhlbgogIGVjaG8gIlVzYWdlOiAkMCA8c2tpbGw+IDx0YXNrPiBbcGF5bG9hZF0iID4mMgogIGVjaG8gIiAgc2tpbGwgIOKAlCBjYXRlZ29yeTogcGluZywgdGVzdCwgaW5zdGFncmFtLCBzdW1tYXJ5LCBiYWNrdXAsIG1lbW9yeSIgPiYyCiAgZWNobyAiICB0YXNrICAg4oCUIHNwZWNpZmljIGFjdGlvbjogd2Vla2x5LXBvc3QsIGRhaWx5LW1vcm5pbmcsIGV0Yy4iID4mMgogIGVjaG8gIiAgcGF5bG9hZCDigJQgb3B0aW9uYWwgZnJlZS10ZXh0IGFyZ3VtZW50IChwYXNzZWQgdG8gdGhlIGhhbmRsZXIpIiA+JjIKICBleGl0IDEKZmkKCiMgQnVpbGQgdGhlIGNyb24gbWVzc2FnZSBib2R5CiMgRm9ybWF0OiBjcm9uOjxza2lsbD46PHRhc2s+Wzo8cGF5bG9hZD5dCkNST05fTVNHPSJjcm9uOiR7U0tJTEx9OiR7VEFTS30iCmlmIFtbIC1uICIkUEFZTE9BRCIgXV07IHRoZW4KICBDUk9OX01TRz0iJHtDUk9OX01TR306JHtQQVlMT0FEfSIKZmkKCiMg4pSA4pSAIFNlbmQg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACmVjaG8gIlNlbmRpbmc6ICR7Q1JPTl9NU0d9IgoKUkVTUE9OU0U9JChjdXJsIC1zIC1YIFBPU1QgIiR7Qk9UX0FQSX0vc2VuZE1lc3NhZ2UiIFwKICAtZCAiY2hhdF9pZD0ke1RHX0NIQVRfSUR9IiBcCiAgLWQgInRleHQ9JHtDUk9OX01TR30iIFwKICAtLW1heC10aW1lIDE1KQoKIyBDaGVjayBUZWxlZ3JhbSBBUEkgcmVzcG9uc2UKT0s9JChlY2hvICIkUkVTUE9OU0UiIHwgcHl0aG9uMyAtYyAiaW1wb3J0IHN5cyxqc29uOyBkPWpzb24ubG9hZChzeXMuc3RkaW4pOyBwcmludChkLmdldCgnb2snLCBGYWxzZSkpIiAyPi9kZXYvbnVsbCB8fCBlY2hvICJGYWxzZSIpCgppZiBbWyAiJE9LIiA9PSAiVHJ1ZSIgXV07IHRoZW4KICBlY2hvICJUcmlnZ2VyIHNlbnQgc3VjY2Vzc2Z1bGx5LiIKZWxzZQogIEVSUk9SPSQoZWNobyAiJFJFU1BPTlNFIiB8IHB5dGhvbjMgLWMgImltcG9ydCBzeXMsanNvbjsgZD1qc29uLmxvYWQoc3lzLnN0ZGluKTsgcHJpbnQoZC5nZXQoJ2Rlc2NyaXB0aW9uJywgJ3Vua25vd24gZXJyb3InKSkiIDI+L2Rldi9udWxsIHx8IGVjaG8gInBhcnNlIGVycm9yIikKICBlY2hvICJUZWxlZ3JhbSBBUEkgZXJyb3I6ICR7RVJST1J9IiA+JjIKICBleGl0IDEKZmk=
+#!/usr/bin/env bash
+# omega-cron trigger script
+# Sends a cron: prefixed message to the OmegaClaw Telegram bot via the Bot API.
+# No new bot needed — uses the same TG_BOT_TOKEN already configured for OmegaClaw.
+#
+# Usage:
+#   ./trigger.sh <skill> <task> [payload]
+#   Examples:
+#     ./trigger.sh ping health-check
+#     ./trigger.sh instagram weekly-post
+#     ./trigger.sh summary daily-morning "focus on new followers"
+#
+# Environment variables (set in OmegaClaw's .env or export directly):
+#   TG_BOT_TOKEN   — bot token from @BotFather (already set for OmegaClaw)
+#   TG_CHAT_ID     — your Telegram chat ID (already bound after auth)
+#
+# The bot will receive this as a plain message prefixed with "cron:".
+# OmegaClaw's cron-handler.metta parses and dispatches it.
+
+set -euo pipefail
+
+# ── Config ────────────────────────────────────────────────────────────────────
+: "${TG_BOT_TOKEN:?TG_BOT_TOKEN env var required}"
+: "${TG_CHAT_ID:?TG_CHAT_ID env var required}"
+
+BOT_API="https://api.telegram.org/bot${TG_BOT_TOKEN}"
+
+# ── Args ──────────────────────────────────────────────────────────────────────
+SKILL="${1:-}"
+TASK="${2:-}"
+PAYLOAD="${3:-}"
+
+if [[ -z "$SKILL" || -z "$TASK" ]]; then
+  echo "Usage: $0 <skill> <task> [payload]" >&2
+  echo "  skill  — category: ping, test, instagram, summary, backup, memory" >&2
+  echo "  task   — specific action: weekly-post, daily-morning, etc." >&2
+  echo "  payload — optional free-text argument (passed to the handler)" >&2
+  exit 1
+fi
+
+# Build the cron message body
+# Format: cron:<skill>:<task>[:<payload>]
+CRON_MSG="cron:${SKILL}:${TASK}"
+if [[ -n "$PAYLOAD" ]]; then
+  CRON_MSG="${CRON_MSG}:${PAYLOAD}"
+fi
+
+# ── Send ──────────────────────────────────────────────────────────────────────
+echo "Sending: ${CRON_MSG}"
+
+RESPONSE=$(curl -s -X POST "${BOT_API}/sendMessage" \
+  -d "chat_id=${TG_CHAT_ID}" \
+  -d "text=${CRON_MSG}" \
+  --max-time 15)
+
+# Check Telegram API response
+OK=$(echo "$RESPONSE" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('ok', False))" 2>/dev/null || echo "False")
+
+if [[ "$OK" == "True" ]]; then
+  echo "Trigger sent successfully."
+else
+  ERROR=$(echo "$RESPONSE" | python3 -c "import sys,json; d=json.load(sys.stdin); print(d.get('description', 'unknown error'))" 2>/dev/null || echo "parse error")
+  echo "Telegram API error: ${ERROR}" >&2
+  exit 1
+fi
